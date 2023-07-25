@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>certificate Generator</title>
+        <link rel="stylesheet" href="index.css">
+        <script>
+            function passvalues()
+            {
+                var date=document.getElementById("date").value;
+                localStorage.setItem("textvalue_for_date",date);
+            
+
+                var fname=document.getElementById("fname").value;
+                localStorage.setItem("textvalue_for_fname",fname);
+            
+
+                var mname=document.getElementById("mname").value;
+                localStorage.setItem("textvalue_for_mname", mname);
+                
+
+                var lname=document.getElementById("lname").value;
+                localStorage.setItem("textvalue_for_lname", lname);
+            
+
+                var clgname=document.getElementById("clgname").value;
+                localStorage.setItem("textvalue_for_clgname",clgname);
+                
+
+                var startdate=document.getElementById("startdate").value;
+                localStorage.setItem("textvalue_for_startdate",startdate);
+            
+
+                var enddate=document.getElementById("enddate").value;
+                localStorage.setItem("textvalue_for_enddate",enddate);
+            
+
+                var position=document.getElementById("position").value;
+                localStorage.setItem("textvalue_for_position",position);
+            
+
+                var certificatenum=document.getElementById("num").value;
+                localStorage.setItem("textvalue_for_certificatenum",certificatenum);
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Fill The Form To Generate certificate</h1>
+        <div class="reg">
+            <form id="reg" method="post" action="certificate.html" onclick="passvalues()">
+                <h2>Enter The Details Here</h2>
+                <label>First Name :</label><br>
+                    <input type="text" name="fname" placeholder="First Name" id="fname" required><br><br>
+                <label>Middle Name :</label><br>
+                    <input type="text" name="mname" placeholder="Middle Name" id="mname" required><br><br>
+                <label>Last Name :</label><br>
+                    <input type="text" name="lname" placeholder="Last Name" id="lname" required><br><br>
+                <label>College Name :</label><br>
+                    <input type="text" name="clgname" placeholder="College Name" id="clgname" required><br><br>
+                <label>Start Date :</label><br>
+                    <input type="date" name="startdate" id="startdate" required><br><br>
+                <label>End Date :</label><br>
+                    <input type="date" name="enddate" id="enddate" required><br><br>
+                <label>Position :</label><br>
+                    <input type="text" name="position" placeholder="Position" id="position" required><br><br>
+                <label>certificate Date :</label><br>
+                    <input type="date" name="date" id="date" required><br><br>
+                <label>certificate number :</label><br>
+                    <input type="text" name="num" id="num" required><br><br>
+                <button type="submit" id="sub" >Done</button>
+            </form>
+        </div>
+    </body>
+</html>

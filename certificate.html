@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="certificate.css">
+        <title>Document</title>  
+    </head>
+    <body onclick="mywholepage()">
+        <form>
+        <div class="container">
+                <div class="verticalLine"> 
+                    <div class="row">    
+                        <div class="logo">
+                            <img src="logo.png" width="250px" height="250px"  >
+                        </div>
+                        <div class="name">Code Clause </div>
+                        <div class="verticalLine2 "></div>        
+                    </div>
+                    <h2>To Whom So IT May Concern</h2>
+                    <h3>Date - <span id="result"></span></h3>
+                    <div class="one">This is to certify that <span id="fname" ></span> <span id="mname"></span> <span id="lname"></span>
+                    Student of <span id="clgname"></span> is working as an
+                    intern with CodeClause from the period <span id="startdate"></span> To <span id="enddate"></span>.</div>
+                    <div class="two">During this period He handled <span id="position"></span> position.</div>
+                    <div class="three">During the course of the Internship, <span id="fname1" ></span> <span id="mname1"></span> <span id="lname1"></span> has
+                    shown a great amount of responsibility, sincerity, and a genuine willingness to learn and zeal to take on new assignments and challenges. In particular, his coordination skills and communication skills are par excellence and his attention to details is impressive.</div>
+                    <div class="seven">We wish all the very best for your future.</div> 
+                    <div class="four">
+                            <img id="sign" src="sign.png" width="90px" height="60px"  >
+                    </div>
+                    <div class="five">with regards,</div>
+                    <div class="six">CodeClause
+                        <img src="stamp.png" width="200px" height="200px" style="padding-left: 180px;">
+                        <img src="msme.png" width="200px" height="200px" style="padding-left: 100px; padding-top: 90px;">
+                    </div>
+                    <h4>Certificate No - <span id="certificatenum"></span></h4>
+                <div class="footer">IF YOU CAN THINK IT, WE CAN BUILD IT</div>  
+                </div>  
+            </div>       
+        </form>
+
+        <script>
+            function mywholepage(){
+                window.print();
+            }
+        </script>
+        <script>
+            document.getElementById("result").innerHTML=localStorage.getItem("textvalue_for_date");
+            document.getElementById("fname").innerHTML=localStorage.getItem("textvalue_for_fname");
+            document.getElementById("fname1").innerHTML=localStorage.getItem("textvalue_for_fname");
+            document.getElementById("mname").innerHTML=localStorage.getItem("textvalue_for_mname");
+            document.getElementById("mname1").innerHTML=localStorage.getItem("textvalue_for_mname");
+            document.getElementById("lname").innerHTML=localStorage.getItem("textvalue_for_lname");
+            document.getElementById("lname1").innerHTML=localStorage.getItem("textvalue_for_lname");
+            document.getElementById("clgname").innerHTML=localStorage.getItem("textvalue_for_clgname");
+            document.getElementById("startdate").innerHTML=localStorage.getItem("textvalue_for_startdate");
+            document.getElementById("enddate").innerHTML=localStorage.getItem("textvalue_for_enddate");
+            document.getElementById("position").innerHTML=localStorage.getItem("textvalue_for_position");
+            document.getElementById("certificatenum").innerHTML=localStorage.getItem("textvalue_for_certificatenum");
+        </script>
+    </body>
+</html>

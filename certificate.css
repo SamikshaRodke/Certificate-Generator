@@ -1,0 +1,147 @@
+body{
+    margin-top: none;
+    margin-bottom: none;
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    background-image:url("bglogoo.png") ;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+* {
+  -webkit-print-color-adjust: exact !important;   /* Chrome, Safari 6 – 15.3, Edge */
+  color-adjust: exact !important;                 /* Firefox 48 – 96 */
+  print-color-adjust: exact !important;           /* Firefox 97+, Safari 15.4+ */  
+}
+
+.row{
+  display: flex;
+  justify-content: space-between;
+}  
+
+.verticalLine {
+    border-left: 160px solid #34ceb5;
+    height: 1645px;
+    vertical-align: middle;
+    left: 1.5%;
+  }
+
+.verticalLine2 {
+    border-left: 6px solid #1ad2b3;
+    height: 200px;
+  
+    left: 99%;
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    float: right;
+    padding: 10px;
+    align-items: 40px;
+}
+
+.name{
+   padding-left:280px;
+   padding-top: 90px;
+   font-size: 38px;
+   float: right;
+   margin: 2 1.5%;
+   width: 30%;
+   font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+}
+  
+h2{
+   text-align: center;
+   padding-left: 90px;
+   padding-right: 160px;
+   padding-top: 45px;
+   font-size: 30px;
+   text-decoration: underline;
+   font-weight: bold;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h3{
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 50px;
+    font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+}
+
+h4{
+    text-align: right;
+}
+
+span{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.one{
+  text-align: justify;
+  padding-top: 70px;
+  font-size: 25px;
+  padding-left: 38px;
+  font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+}
+
+.two{
+  text-align: justify;
+  padding-top: 75px;
+  font-size: 25px;
+  padding-left: 38px;
+  font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+}
+
+.three{
+  text-align: justify;
+  padding-top: 75px;
+  font-size: 25px;
+  padding-left: 38px;
+  font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+}
+
+.four{
+  padding-top: 20px;
+  padding-left: 8px;
+  padding-right: 90px;
+}
+
+.seven{
+  padding-top: 75px;
+  font-size: 25px;
+  padding-left: 38px;
+  padding-right: 90px;
+  font-weight: bold;
+}
+
+.five{
+  font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+  padding-top: 5px;
+  font-size: 25px;
+  padding-left: 38px;
+  padding-right: 90px;
+}
+.six{
+  display: flex;
+  font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+  justify-content:space-between;
+  padding-top: 10px;
+  font-size: 25px;
+  padding-left: 38px;
+  padding-right: 90px;
+  font-weight: bold;
+}
+
+#sign{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.footer{
+    font-family: avantgrade, TeX Gyre Adventor, URW Gothnic, sans-serif;
+    font-size: 15px medium;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+}
